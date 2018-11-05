@@ -1,0 +1,288 @@
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    color: #eee;
+}
+
+body {
+    background: #222;
+}
+
+h1 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+ul {
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.title h2 {
+    font-size: 1em;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.profile p,
+.contact p {
+    color: #ddd;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+.header-row {
+    background: #000;
+    padding: 20px 0 10px 0;
+}
+
+.profile-row {
+    background: #000;
+    padding: 20px 0 40px 0;
+}
+
+.header {
+    text-align: center;
+}
+
+.header .name h1 {
+    margin: 0;
+    font-size: 1em;
+    padding: 20px 0px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.main-nav li {
+    list-style: none;
+}
+
+.nav-item {
+    display: block;
+    padding: 20px 15px;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: .6em;
+}
+
+.nav-item:hover {
+    color: white;
+    text-shadow: 0 1px 0 #ccc,
+             0 2px 0 #c9c9c9,
+             0 3px 0 #bbb,
+             0 4px 0 #b9b9b9,
+             0 5px 0 #aaa,
+             0 6px 1px rgba(0,0,0,.1),
+             0 0 5px rgba(0,0,0,.1),
+             0 1px 3px rgba(0,0,0,.3),
+             0 3px 5px rgba(0,0,0,.2),
+             0 5px 10px rgba(0,0,0,.25),
+             0 10px 10px rgba(0,0,0,.2),
+             0 20px 20px rgba(0,0,0,.15);
+}
+
+
+
+/* profile */
+
+.profile {
+    text-align: center;
+}
+
+.profile-img {
+    width: 60%;
+    margin: auto;
+}
+
+
+
+/* portfolio */
+
+.portfolio-item {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.portfolio-item h3 {
+    margin-top: 1em;
+}
+
+.portfolio-item p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* skills */
+
+.skills {
+    text-align: center;
+}
+
+/* contact */
+.contact {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.contact span {
+    font-size: 1em;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* footer */
+.footer h3 {
+    float: left;
+    font-size: 1em;
+}
+
+.footer-nav {
+    display: none;
+}
+
+.footer .back-to-top {
+    display: block;
+    float: right;
+    margin: 16px 0;
+}
+
+.footer .container {
+    padding: 20px 0;
+    border-top: 1px solid #777;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    .profile-img {
+        float: right;
+        width: 40%;
+    }
+
+    .profile p {
+        float: left;
+        width: 60%;
+        margin: 0;
+        padding-right: 30px;
+        text-align: left;
+    }
+
+    .portfolio-item {
+        width: 50%;
+        float: left;
+        padding: 0 10px;
+        min-height: 420px;
+    }
+    .portfolio-item p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .main-nav li {
+        display: inline-block;
+    }
+
+    .contact {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .footer h3 {
+        margin: 0;
+        padding: 20px 0;
+        font-family: 'Press Start 2P', sans-serif;
+    }
+
+    .footer-nav li {
+        list-style: none;
+    }
+
+    .footer-nav {
+        display: block;
+        float: right;
+        margin-top: 0;
+    }
+
+    .footer-nav li {
+        display: inline-block;
+    }
+
+    .footer .back-to-top {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .header .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .portfolio-item {
+        width: 33%;
+        float: left;
+        padding: 0 10px;
+        min-height: 420px;
+    }
+
+    .contact {
+        text-align: center;
+        width: 60%;
+        margin: auto;
+    }
+}
